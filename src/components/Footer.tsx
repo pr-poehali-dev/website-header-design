@@ -6,20 +6,20 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Информация о школе */}
+          {/* Информация о компании */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <Icon name="GraduationCap" size={24} className="text-white" />
+              <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
+                <Icon name="Sparkles" size={24} className="text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Школа №1</h3>
-                <p className="text-sm text-gray-400">Образование будущего</p>
+                <h3 className="text-xl font-bold">InnovateLab</h3>
+                <p className="text-sm text-gray-400">Создаем будущее</p>
               </div>
             </div>
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-              Наша школа предоставляет качественное образование с использованием
-              современных технологий и инновационных методов обучения.
+              Мы разрабатываем инновационные решения для современного бизнеса,
+              помогаем компаниям расти и достигать новых высот.
             </p>
 
             {/* Социальные сети */}
@@ -36,7 +36,7 @@ const Footer = () => {
                 size="icon"
                 className="text-gray-400 hover:text-white hover:bg-gray-800"
               >
-                <Icon name="Youtube" size={20} />
+                <Icon name="Twitter" size={20} />
               </Button>
               <Button
                 variant="ghost"
@@ -45,10 +45,17 @@ const Footer = () => {
               >
                 <Icon name="Instagram" size={20} />
               </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-gray-400 hover:text-white hover:bg-gray-800"
+              >
+                <Icon name="Linkedin" size={20} />
+              </Button>
             </div>
           </div>
 
-          {/* Быстрые ссылки */}
+          {/* Карта сайта */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Навигация</h3>
             <ul className="space-y-3">
@@ -65,7 +72,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Расписание
+                  Услуги
                 </a>
               </li>
               <li>
@@ -73,7 +80,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Электронный дневник
+                  Проекты
                 </a>
               </li>
               <li>
@@ -81,7 +88,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Библиотека
+                  О нас
                 </a>
               </li>
               <li>
@@ -89,7 +96,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  О школе
+                  Блог
                 </a>
               </li>
             </ul>
@@ -101,19 +108,21 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Icon name="MapPin" size={16} className="text-gray-400" />
-                <span className="text-gray-400">ул. Школьная, 1, Москва</span>
+                <span className="text-gray-400">
+                  ул. Инновационная, 15, Москва
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="Phone" size={16} className="text-gray-400" />
-                <span className="text-gray-400">+7 (123) 456-78-90</span>
+                <span className="text-gray-400">+7 (495) 123-45-67</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="Mail" size={16} className="text-gray-400" />
-                <span className="text-gray-400">info@school1.edu</span>
+                <span className="text-gray-400">info@innovatelab.ru</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="Clock" size={16} className="text-gray-400" />
-                <span className="text-gray-400">Пн-Пт: 8:00-18:00</span>
+                <span className="text-gray-400">Пн-Пт: 9:00-18:00</span>
               </div>
             </div>
           </div>
@@ -123,7 +132,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2025 Школа №1. Все права защищены.
+              © 2025 InnovateLab. Все права защищены.
             </p>
             <div className="flex space-x-6 text-sm">
               <a
@@ -136,7 +145,7 @@ const Footer = () => {
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                Правила использования
+                Пользовательское соглашение
               </a>
             </div>
           </div>

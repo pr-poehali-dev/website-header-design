@@ -1,14 +1,14 @@
 import Header from "@/components/Header";
-import InfoBlock from "@/components/InfoBlock";
-import QuickAccess from "@/components/QuickAccess";
+import Hero from "@/components/Hero";
+import MainContent from "@/components/MainContent";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <InfoBlock />
-      <QuickAccess />
+      <Hero />
+      <MainContent />
       <Footer />
     </div>
   );
