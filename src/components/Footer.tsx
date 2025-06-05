@@ -6,17 +6,20 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Логотип и описание */}
+          {/* Информация о школе */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Л</span>
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                <Icon name="GraduationCap" size={24} className="text-white" />
               </div>
-              <span className="text-xl font-bold">Логотип</span>
+              <div>
+                <h3 className="text-xl font-bold">Школа №1</h3>
+                <p className="text-sm text-gray-400">Образование будущего</p>
+              </div>
             </div>
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-              Мы создаем инновационные решения для современного бизнеса. Наша
-              цель — помочь вам достичь новых высот.
+              Наша школа предоставляет качественное образование с использованием
+              современных технологий и инновационных методов обучения.
             </p>
 
             {/* Социальные сети */}
@@ -33,7 +36,7 @@ const Footer = () => {
                 size="icon"
                 className="text-gray-400 hover:text-white hover:bg-gray-800"
               >
-                <Icon name="Twitter" size={20} />
+                <Icon name="Youtube" size={20} />
               </Button>
               <Button
                 variant="ghost"
@@ -42,17 +45,10 @@ const Footer = () => {
               >
                 <Icon name="Instagram" size={20} />
               </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-gray-400 hover:text-white hover:bg-gray-800"
-              >
-                <Icon name="Linkedin" size={20} />
-              </Button>
             </div>
           </div>
 
-          {/* Карта сайта */}
+          {/* Быстрые ссылки */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Навигация</h3>
             <ul className="space-y-3">
@@ -69,7 +65,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  О нас
+                  Расписание
                 </a>
               </li>
               <li>
@@ -77,7 +73,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Услуги
+                  Электронный дневник
                 </a>
               </li>
               <li>
@@ -85,7 +81,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Портфолио
+                  Библиотека
                 </a>
               </li>
               <li>
@@ -93,15 +89,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Блог
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Контакты
+                  О школе
                 </a>
               </li>
             </ul>
@@ -112,16 +100,20 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Контакты</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
+                <Icon name="MapPin" size={16} className="text-gray-400" />
+                <span className="text-gray-400">ул. Школьная, 1, Москва</span>
+              </div>
+              <div className="flex items-center space-x-3">
                 <Icon name="Phone" size={16} className="text-gray-400" />
-                <span className="text-gray-400">+7 (999) 123-45-67</span>
+                <span className="text-gray-400">+7 (123) 456-78-90</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon name="Mail" size={16} className="text-gray-400" />
-                <span className="text-gray-400">hello@example.com</span>
+                <span className="text-gray-400">info@school1.edu</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Icon name="MapPin" size={16} className="text-gray-400" />
-                <span className="text-gray-400">Москва, Россия</span>
+                <Icon name="Clock" size={16} className="text-gray-400" />
+                <span className="text-gray-400">Пн-Пт: 8:00-18:00</span>
               </div>
             </div>
           </div>
@@ -131,7 +123,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2025 Логотип. Все права защищены.
+              © 2025 Школа №1. Все права защищены.
             </p>
             <div className="flex space-x-6 text-sm">
               <a
@@ -144,7 +136,7 @@ const Footer = () => {
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                Условия использования
+                Правила использования
               </a>
             </div>
           </div>
